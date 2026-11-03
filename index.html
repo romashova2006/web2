@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Студенческий файлообменник</title>
+    <!-- Подключение шрифта Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Шапка сайта (Высота 75px) -->
+    <header>
+        <div class="container header-block">
+            <div class="logo">
+                <!-- Точный логотип: верхняя-правая и нижняя-левая рамки, цвет #A6C81E -->
+                <svg width="40" height="40" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="4" y="16" width="28" height="28" rx="8" stroke="#A6C81E" stroke-width="4"/>
+                    <rect x="16" y="4" width="28" height="28" rx="8" stroke="#A6C81E" stroke-width="4"/>
+                </svg>
+                <div class="logo-text">
+                    Студенческий<br>файлообменник
+                </div>
+            </div>
+            <div class="auth-links">
+                <a href="#" id="open-register">Регистрация</a>
+                <a href="#" id="open-login">Вход</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <div class="container">
+            <div class="page-header">
+                <!-- H1: Inter, 48px, Line-height 60px, Medium 500, #181818 -->
+                <h1>Учебные материалы</h1>
+                <button class="btn-add">
+                    <span>+</span> Добавить пост
+                </button>
+            </div>
+
+            <!-- Сетка 15 карточек -->
+            <div class="posts-grid">
+                <!-- Ряд 1 -->
+                <div class="card">
+                    <div class="card-text">
+                        <div class="card-date">Добавлено 15 августа</div>
+                        <div class="card-title">Расписание занятий</div>
+                    </div>
+                    <a href="#" class="btn-details">Подробнее</a>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <div class="card-date">Добавлено 12 августа</div>
+                        <div class="card-title">Прикрепленные файлы</div>
+                    </div>
+                    <a href="#" class="btn-details">Подробнее</a>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <div class="card-date">Добавлено 11 августа</div>
+                        <div class="card-title">Лабораторная работа #5</div>
+                    </div>
+                    <a href="#" class="btn-details">Подробнее</a>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <div class="card-date">Добавлено 9 августа</div>
+                        <div class="card-title">Студенческая весна. Фото и...</div>
+                    </div>
+                    <a href="#" class="btn-details">Подробнее</a>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <div class="card-date">Добавлено 5 августа</div>
+                        <div class="card-title">Список на отчисление</div>
+                    </div>
+                    <a href="#" class="btn-details">Подробнее</a>
+                </div>
+
+                <!-- Ряд 2 -->
+                <div class="card">
+                    <div class="card-text">
+                        <div class="card-date">Добавлено 5 августа</div>
+                        <div class="card-title">Список на отчисление</div>
+                    </div>
+                    <a href="#" class="btn-details">Подробнее</a>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <div class="card-date">Добавлено 4 августа</div>
+                        <div class="card-title">Прикрепленные файлы</div>
+                    </div>
+                    <a href="#" class="btn-details">Подробнее</a>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <div class="card-date">Добавлено 2 августа</div>
+                        <div class="card-title">Расписание занятий</div>
+                    </div>
+                    <a href="#" class="btn-details">Подробнее</a>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <div class="card-date">Добавлено 1 августа</div>
+                        <div class="card-title">Студенческая весна. Фото и...</div>
+                    </div>
+                    <a href="#" class="btn-details">Подробнее</a>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <div class="card-date">Добавлено 26 июля</div>
+                        <div class="card-title">Лабораторная работа #5</div>
+                    </div>
+                    <a href="#" class="btn-details">Подробнее</a>
+                </div>
+
+                <!-- Ряд 3 -->
+                <div class="card">
+                    <div class="card-text">
+                        <div class="card-date">Добавлено 22 июля</div>
+                        <div class="card-title">Расписание занятий</div>
+                    </div>
+                    <a href="#" class="btn-details">Подробнее</a>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <div class="card-date">Добавлено 21 июля</div>
+                        <div class="card-title">Лабораторная работа #5</div>
+                    </div>
+                    <a href="#" class="btn-details">Подробнее</a>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <div class="card-date">Добавлено 16 июля</div>
+                        <div class="card-title">Прикрепленные файлы</div>
+                    </div>
+                    <a href="#" class="btn-details">Подробнее</a>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <div class="card-date">Добавлено 12 июля</div>
+                        <div class="card-title">Студенческая весна. Фото и...</div>
+                    </div>
+                    <a href="#" class="btn-details">Подробнее</a>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <div class="card-date">Добавлено 6 июля</div>
+                        <div class="card-title">Список на отчисление</div>
+                    </div>
+                    <a href="#" class="btn-details">Подробнее</a>
+                </div>
+            </div>
+
+            <!-- Кнопка Показать еще (1200x60, Border 2px, Radius 10px) -->
+            <div class="load-more-wrapper">
+                <button class="btn-load-more">
+                    <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L8 8L15 1" stroke="#A6C81E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Показать еще
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал (Высота 99px) -->
+    <footer>
+        <div class="container footer-content">
+            <span class="footer-email">info@gmail.com</span>
+            <span class="footer-info">Информация о разработчике</span>
+        </div>
+    </footer>
+
+    <!-- Модальное окно -->
+    <div class="modal-overlay" id="authModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">&times;</button>
+            
+            <div class="modal-tabs">
+                <button class="modal-tab active" id="tabRegister">Регистрация</button>
+                <button class="modal-tab" id="tabLogin">Авторизация</button>
+            </div>
+
+            <form class="form-container active" id="registerForm" novalidate>
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                    <div class="error-message">Только русские буквы, пробелы и дефисы</div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email" required>
+                        <div class="error-message">Некорректный email</div>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Мобильный телефон" required>
+                        <div class="error-message">Некорректный номер</div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="password" name="password" placeholder="Пароль" required>
+                        <div class="error-message">Мин. 6 символов</div>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="confirmPassword" placeholder="Повторите пароль" required>
+                        <div class="error-message">Не совпадает</div>
+                    </div>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="agreement" name="agreement" required>
+                    <label for="agreement">Согласен на обработку персональных данных</label>
+                </div>
+                <div class="error-message agreement-error" id="agreementError">Необходимо ваше согласие</div>
+
+                <button type="submit" class="btn-submit">Зарегистрироваться</button>
+                <div class="form-note">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="6" r="5.5" stroke="#999" stroke-width="1"/><path d="M6 3V6" stroke="#999" stroke-linecap="round"/><circle cx="6" cy="8.5" r="0.5" fill="#999"/></svg>
+                    Все поля обязательны для заполнения
+                </div>
+            </form>
+
+            <form class="form-container" id="loginForm" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="email" name="loginEmail" placeholder="Email" required>
+                        <div class="error-message">Некорректный email</div>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="loginPassword" placeholder="Пароль" required>
+                        <div class="error-message">Введите пароль</div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit">Войти</button>
+                <div class="form-note">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="6" r="5.5" stroke="#999" stroke-width="1"/><path d="M6 3V6" stroke="#999" stroke-linecap="round"/><circle cx="6" cy="8.5" r="0.5" fill="#999"/></svg>
+                    Все поля обязательны для заполнения
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
