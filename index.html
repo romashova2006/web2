@@ -1,23 +1,18 @@
-<!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студенческий файлообменник</title>
-    <!-- Подключение шрифта Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Шапка сайта (Высота 75px) -->
+    <!-- Шапка сайта -->
     <header>
         <div class="container header-block">
             <div class="logo">
-                <!-- Точный логотип: верхняя-правая и нижняя-левая рамки, цвет #A6C81E -->
                 <svg width="40" height="40" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="4" y="16" width="28" height="28" rx="8" stroke="#A6C81E" stroke-width="4"/>
                     <rect x="16" y="4" width="28" height="28" rx="8" stroke="#A6C81E" stroke-width="4"/>
@@ -37,128 +32,199 @@
     <main>
         <div class="container">
             <div class="page-header">
-                <!-- H1: Inter, 48px, Line-height 60px, Medium 500, #181818 -->
                 <h1>Учебные материалы</h1>
                 <button class="btn-add">
-                    <span>+</span> Добавить пост
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 2V14M2 8H14" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span class="btn-text">Добавить пост</span>
                 </button>
             </div>
 
-            <!-- Сетка 15 карточек -->
+            <!-- Сетка 15 карточек  -->
             <div class="posts-grid">
-                <!-- Ряд 1 -->
-                <div class="card">
+                <!-- Карточка 1 -->
+                <a href="#" class="card">
                     <div class="card-text">
-                        <div class="card-date">Добавлено 15 августа</div>
+                        <div class="card-date">
+                            <svg class="clock-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="6" r="5" stroke="#999" stroke-width="1.2"/><path d="M6 3.5V6L8 8" stroke="#999" stroke-width="1.2" stroke-linecap="round"/></svg>
+                            <span class="hide-mobile">Добавлено </span>15 августа
+                        </div>
                         <div class="card-title">Расписание занятий</div>
                     </div>
-                    <a href="#" class="btn-details">Подробнее</a>
-                </div>
-                <div class="card">
+                    <div class="btn-details">Подробнее</div>
+                </a>
+                
+                <!-- Карточка 2 -->
+                <a href="#" class="card">
                     <div class="card-text">
-                        <div class="card-date">Добавлено 12 августа</div>
+                        <div class="card-date">
+                            <svg class="clock-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="6" r="5" stroke="#999" stroke-width="1.2"/><path d="M6 3.5V6L8 8" stroke="#999" stroke-width="1.2" stroke-linecap="round"/></svg>
+                            <span class="hide-mobile">Добавлено </span>12 августа
+                        </div>
                         <div class="card-title">Прикрепленные файлы</div>
                     </div>
-                    <a href="#" class="btn-details">Подробнее</a>
-                </div>
-                <div class="card">
-                    <div class="card-text">
-                        <div class="card-date">Добавлено 11 августа</div>
-                        <div class="card-title">Лабораторная работа #5</div>
-                    </div>
-                    <a href="#" class="btn-details">Подробнее</a>
-                </div>
-                <div class="card">
-                    <div class="card-text">
-                        <div class="card-date">Добавлено 9 августа</div>
-                        <div class="card-title">Студенческая весна. Фото и...</div>
-                    </div>
-                    <a href="#" class="btn-details">Подробнее</a>
-                </div>
-                <div class="card">
-                    <div class="card-text">
-                        <div class="card-date">Добавлено 5 августа</div>
-                        <div class="card-title">Список на отчисление</div>
-                    </div>
-                    <a href="#" class="btn-details">Подробнее</a>
-                </div>
+                    <div class="btn-details">Подробнее</div>
+                </a>
 
-                <!-- Ряд 2 -->
-                <div class="card">
+                <!-- Карточка 3 -->
+                <a href="#" class="card">
                     <div class="card-text">
-                        <div class="card-date">Добавлено 5 августа</div>
-                        <div class="card-title">Список на отчисление</div>
-                    </div>
-                    <a href="#" class="btn-details">Подробнее</a>
-                </div>
-                <div class="card">
-                    <div class="card-text">
-                        <div class="card-date">Добавлено 4 августа</div>
-                        <div class="card-title">Прикрепленные файлы</div>
-                    </div>
-                    <a href="#" class="btn-details">Подробнее</a>
-                </div>
-                <div class="card">
-                    <div class="card-text">
-                        <div class="card-date">Добавлено 2 августа</div>
-                        <div class="card-title">Расписание занятий</div>
-                    </div>
-                    <a href="#" class="btn-details">Подробнее</a>
-                </div>
-                <div class="card">
-                    <div class="card-text">
-                        <div class="card-date">Добавлено 1 августа</div>
-                        <div class="card-title">Студенческая весна. Фото и...</div>
-                    </div>
-                    <a href="#" class="btn-details">Подробнее</a>
-                </div>
-                <div class="card">
-                    <div class="card-text">
-                        <div class="card-date">Добавлено 26 июля</div>
+                        <div class="card-date">
+                            <svg class="clock-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="6" r="5" stroke="#999" stroke-width="1.2"/><path d="M6 3.5V6L8 8" stroke="#999" stroke-width="1.2" stroke-linecap="round"/></svg>
+                            <span class="hide-mobile">Добавлено </span>11 августа
+                        </div>
                         <div class="card-title">Лабораторная работа #5</div>
                     </div>
-                    <a href="#" class="btn-details">Подробнее</a>
-                </div>
+                    <div class="btn-details">Подробнее</div>
+                </a>
 
-                <!-- Ряд 3 -->
-                <div class="card">
+                <!-- Карточка 4 -->
+                <a href="#" class="card">
                     <div class="card-text">
-                        <div class="card-date">Добавлено 22 июля</div>
-                        <div class="card-title">Расписание занятий</div>
-                    </div>
-                    <a href="#" class="btn-details">Подробнее</a>
-                </div>
-                <div class="card">
-                    <div class="card-text">
-                        <div class="card-date">Добавлено 21 июля</div>
-                        <div class="card-title">Лабораторная работа #5</div>
-                    </div>
-                    <a href="#" class="btn-details">Подробнее</a>
-                </div>
-                <div class="card">
-                    <div class="card-text">
-                        <div class="card-date">Добавлено 16 июля</div>
-                        <div class="card-title">Прикрепленные файлы</div>
-                    </div>
-                    <a href="#" class="btn-details">Подробнее</a>
-                </div>
-                <div class="card">
-                    <div class="card-text">
-                        <div class="card-date">Добавлено 12 июля</div>
+                        <div class="card-date">
+                            <svg class="clock-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="6" r="5" stroke="#999" stroke-width="1.2"/><path d="M6 3.5V6L8 8" stroke="#999" stroke-width="1.2" stroke-linecap="round"/></svg>
+                            <span class="hide-mobile">Добавлено </span>9 августа
+                        </div>
                         <div class="card-title">Студенческая весна. Фото и...</div>
                     </div>
-                    <a href="#" class="btn-details">Подробнее</a>
-                </div>
-                <div class="card">
+                    <div class="btn-details">Подробнее</div>
+                </a>
+
+                <!-- Карточка 5 -->
+                <a href="#" class="card">
                     <div class="card-text">
-                        <div class="card-date">Добавлено 6 июля</div>
+                        <div class="card-date">
+                            <svg class="clock-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="6" r="5" stroke="#999" stroke-width="1.2"/><path d="M6 3.5V6L8 8" stroke="#999" stroke-width="1.2" stroke-linecap="round"/></svg>
+                            <span class="hide-mobile">Добавлено </span>5 августа
+                        </div>
                         <div class="card-title">Список на отчисление</div>
                     </div>
-                    <a href="#" class="btn-details">Подробнее</a>
-                </div>
+                    <div class="btn-details">Подробнее</div>
+                </a>
+
+                <!-- Карточка 6 -->
+                <a href="#" class="card">
+                    <div class="card-text">
+                        <div class="card-date">
+                            <svg class="clock-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="6" r="5" stroke="#999" stroke-width="1.2"/><path d="M6 3.5V6L8 8" stroke="#999" stroke-width="1.2" stroke-linecap="round"/></svg>
+                            <span class="hide-mobile">Добавлено </span>5 августа
+                        </div>
+                        <div class="card-title">Список на отчисление</div>
+                    </div>
+                    <div class="btn-details">Подробнее</div>
+                </a>
+
+                <!-- Карточка 7 -->
+                <a href="#" class="card">
+                    <div class="card-text">
+                        <div class="card-date">
+                            <svg class="clock-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="6" r="5" stroke="#999" stroke-width="1.2"/><path d="M6 3.5V6L8 8" stroke="#999" stroke-width="1.2" stroke-linecap="round"/></svg>
+                            <span class="hide-mobile">Добавлено </span>4 августа
+                        </div>
+                        <div class="card-title">Прикрепленные файлы</div>
+                    </div>
+                    <div class="btn-details">Подробнее</div>
+                </a>
+
+                <!-- Карточка 8 -->
+                <a href="#" class="card">
+                    <div class="card-text">
+                        <div class="card-date">
+                            <svg class="clock-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="6" r="5" stroke="#999" stroke-width="1.2"/><path d="M6 3.5V6L8 8" stroke="#999" stroke-width="1.2" stroke-linecap="round"/></svg>
+                            <span class="hide-mobile">Добавлено </span>2 августа
+                        </div>
+                        <div class="card-title">Расписание занятий</div>
+                    </div>
+                    <div class="btn-details">Подробнее</div>
+                </a>
+
+                <!-- Карточка 9 -->
+                <a href="#" class="card">
+                    <div class="card-text">
+                        <div class="card-date">
+                            <svg class="clock-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="6" r="5" stroke="#999" stroke-width="1.2"/><path d="M6 3.5V6L8 8" stroke="#999" stroke-width="1.2" stroke-linecap="round"/></svg>
+                            <span class="hide-mobile">Добавлено </span>1 августа
+                        </div>
+                        <div class="card-title">Студенческая весна. Фото и...</div>
+                    </div>
+                    <div class="btn-details">Подробнее</div>
+                </a>
+
+                <!-- Карточка 10 -->
+                <a href="#" class="card">
+                    <div class="card-text">
+                        <div class="card-date">
+                            <svg class="clock-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="6" r="5" stroke="#999" stroke-width="1.2"/><path d="M6 3.5V6L8 8" stroke="#999" stroke-width="1.2" stroke-linecap="round"/></svg>
+                            <span class="hide-mobile">Добавлено </span>26 июля
+                        </div>
+                        <div class="card-title">Лабораторная работа #5</div>
+                    </div>
+                    <div class="btn-details">Подробнее</div>
+                </a>
+
+                <!-- Карточка 11 -->
+                <a href="#" class="card">
+                    <div class="card-text">
+                        <div class="card-date">
+                            <svg class="clock-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="6" r="5" stroke="#999" stroke-width="1.2"/><path d="M6 3.5V6L8 8" stroke="#999" stroke-width="1.2" stroke-linecap="round"/></svg>
+                            <span class="hide-mobile">Добавлено </span>22 июля
+                        </div>
+                        <div class="card-title">Расписание занятий</div>
+                    </div>
+                    <div class="btn-details">Подробнее</div>
+                </a>
+
+                <!-- Карточка 12 -->
+                <a href="#" class="card">
+                    <div class="card-text">
+                        <div class="card-date">
+                            <svg class="clock-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="6" r="5" stroke="#999" stroke-width="1.2"/><path d="M6 3.5V6L8 8" stroke="#999" stroke-width="1.2" stroke-linecap="round"/></svg>
+                            <span class="hide-mobile">Добавлено </span>21 июля
+                        </div>
+                        <div class="card-title">Лабораторная работа #5</div>
+                    </div>
+                    <div class="btn-details">Подробнее</div>
+                </a>
+
+                <!-- Карточка 13 -->
+                <a href="#" class="card">
+                    <div class="card-text">
+                        <div class="card-date">
+                            <svg class="clock-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="6" r="5" stroke="#999" stroke-width="1.2"/><path d="M6 3.5V6L8 8" stroke="#999" stroke-width="1.2" stroke-linecap="round"/></svg>
+                            <span class="hide-mobile">Добавлено </span>16 июля
+                        </div>
+                        <div class="card-title">Прикрепленные файлы</div>
+                    </div>
+                    <div class="btn-details">Подробнее</div>
+                </a>
+
+                <!-- Карточка 14 -->
+                <a href="#" class="card">
+                    <div class="card-text">
+                        <div class="card-date">
+                            <svg class="clock-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="6" r="5" stroke="#999" stroke-width="1.2"/><path d="M6 3.5V6L8 8" stroke="#999" stroke-width="1.2" stroke-linecap="round"/></svg>
+                            <span class="hide-mobile">Добавлено </span>12 июля
+                        </div>
+                        <div class="card-title">Студенческая весна. Фото и...</div>
+                    </div>
+                    <div class="btn-details">Подробнее</div>
+                </a>
+
+                <!-- Карточка 15 -->
+                <a href="#" class="card">
+                    <div class="card-text">
+                        <div class="card-date">
+                            <svg class="clock-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="6" r="5" stroke="#999" stroke-width="1.2"/><path d="M6 3.5V6L8 8" stroke="#999" stroke-width="1.2" stroke-linecap="round"/></svg>
+                            <span class="hide-mobile">Добавлено </span>6 июля
+                        </div>
+                        <div class="card-title">Список на отчисление</div>
+                    </div>
+                    <div class="btn-details">Подробнее</div>
+                </a>
             </div>
 
-            <!-- Кнопка Показать еще (1200x60, Border 2px, Radius 10px) -->
+            <!-- Кнопка Показать еще -->
             <div class="load-more-wrapper">
                 <button class="btn-load-more">
                     <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -170,7 +236,7 @@
         </div>
     </main>
 
-    <!-- Подвал (Высота 99px) -->
+    <!-- Подвал -->
     <footer>
         <div class="container footer-content">
             <span class="footer-email">info@gmail.com</span>
@@ -252,5 +318,4 @@
 
     <script src="script.js"></script>
 </body>
-
 </html>
